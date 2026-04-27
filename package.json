@@ -1,0 +1,67 @@
+{
+  "name": "YOUR_PACKAGE_NAME",
+  "version": "0.0.0-development",
+  "description": "YOUR_DESCRIPTION",
+  "type": "module",
+  "sideEffects": false,
+  "license": "MIT",
+  "author": {
+    "name": "YOUR_NAME",
+    "email": "YOUR_EMAIL",
+    "url": "YOUR_URL"
+  },
+  "homepage": "https://YOUR_GITHUB_USER.github.io/YOUR_PACKAGE_NAME",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME/issues"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@vitest/coverage-v8": "^3.1.3",
+    "eslint": "^9.26.0",
+    "prettier": "^3.5.3",
+    "semantic-release": "^24.2.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "tsup": "^8.4.0",
+    "typedoc": "^0.28.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1",
+    "vitest": "^3.1.3"
+  },
+  "scripts": {
+    "build": "tsup",
+    "build:docs": "typedoc --out docs/api src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests",
+    "lint:fix": "eslint src tests --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "ci": "npm run typecheck && npm run lint && npm run test:coverage",
+    "semantic-release": "semantic-release",
+    "docs:index": "docs-index-keeper update"
+  }
+}
