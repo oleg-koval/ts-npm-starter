@@ -1,22 +1,22 @@
 {
-  "name": "YOUR_PACKAGE_NAME",
+  "name": "ts-npm-starter",
   "version": "0.0.0-development",
-  "description": "YOUR_DESCRIPTION",
+  "description": "Production-ready TypeScript npm package starter template",
   "type": "module",
   "sideEffects": false,
   "license": "MIT",
   "author": {
-    "name": "YOUR_NAME",
-    "email": "YOUR_EMAIL",
-    "url": "YOUR_URL"
+    "name": "Oleg Koval",
+    "email": "oleg@bizcuit.nl",
+    "url": "https://olegkoval.com"
   },
-  "homepage": "https://YOUR_GITHUB_USER.github.io/YOUR_PACKAGE_NAME",
+  "homepage": "https://oleg-koval.github.io/ts-npm-starter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME.git"
+    "url": "https://github.com/oleg-koval/ts-npm-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME/issues"
+    "url": "https://github.com/oleg-koval/ts-npm-starter/issues"
   },
   "keywords": [],
   "engines": {

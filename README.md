@@ -1,10 +1,10 @@
 # ts-npm-starter
 
-[![npm](https://img.shields.io/npm/v/YOUR_PACKAGE_NAME?color=F25A1D&label=npm)](https://www.npmjs.com/package/YOUR_PACKAGE_NAME)
-[![CI](https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME/actions/workflows/code-quality.yml/badge.svg)](https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME/actions/workflows/code-quality.yml)
-[![Coverage](https://coveralls.io/repos/github/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME/badge.svg?branch=main)](https://coveralls.io/github/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME?branch=main)
+[![npm](https://img.shields.io/npm/v/ts-npm-starter?color=F25A1D&label=npm)](https://www.npmjs.com/package/ts-npm-starter)
+[![CI](https://github.com/oleg-koval/ts-npm-starter/actions/workflows/code-quality.yml/badge.svg)](https://github.com/oleg-koval/ts-npm-starter/actions/workflows/code-quality.yml)
+[![Coverage](https://coveralls.io/repos/github/oleg-koval/ts-npm-starter/badge.svg?branch=main)](https://coveralls.io/github/oleg-koval/ts-npm-starter?branch=main)
 [![License: MIT](https://img.shields.io/badge/license-MIT-062F34)](LICENSE)
-[![Node](https://img.shields.io/node/v/YOUR_PACKAGE_NAME)](package.json)
+[![Node](https://img.shields.io/node/v/ts-npm-starter)](package.json)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)](tsconfig.json)
 
 > **GitHub Template** — production-ready TypeScript npm package starter.
@@ -70,7 +70,7 @@ All other workflows use `GITHUB_TOKEN` (auto-provided by GitHub Actions).
 
 Repo → Settings → Pages → Source: **GitHub Actions**
 
-TypeDoc will publish your API docs to `https://YOUR_GITHUB_USER.github.io/YOUR_PACKAGE_NAME` on every push to `main`.
+TypeDoc will publish your API docs to `https://oleg-koval.github.io/ts-npm-starter` on every push to `main`.
 
 ### 6. Register on Coveralls
 

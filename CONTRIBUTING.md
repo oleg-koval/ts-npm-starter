@@ -33,8 +33,8 @@ Open an issue using the **Feature request** template. Explain the problem you're
 ## Development Setup
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME.git
-cd YOUR_PACKAGE_NAME
+git clone https://github.com/oleg-koval/ts-npm-starter.git
+cd ts-npm-starter
 npm install
 
 npm run test:watch   # tests in watch mode
@@ -72,4 +72,4 @@ Every merge to `main`:
 
 ## Questions?
 
-Open a [Discussion](https://github.com/YOUR_GITHUB_USER/YOUR_PACKAGE_NAME/discussions) for anything that doesn't fit a bug report or feature request.
+Open a [Discussion](https://github.com/oleg-koval/ts-npm-starter/discussions) for anything that doesn't fit a bug report or feature request.
