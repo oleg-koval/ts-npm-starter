@@ -14,11 +14,11 @@ Source: [oleg-koval/RULES.md §2](https://github.com/oleg-koval/starters/blob/ma
 
 ## Gaps
 
-| Rule | Current state | Gap |
-|------|--------------|-----|
-| §2.2 File length 300-line cap | Not in ESLint config | Add `max-lines` rule |
-| §2.4 Pre-commit hooks | Not configured (CI-only) | Add `lefthook.yml` |
-| §2.3 E2E > unit | Only unit tests exist | Add guidance + E2E example pattern |
+| Rule                          | Current state            | Gap                                |
+| ----------------------------- | ------------------------ | ---------------------------------- |
+| §2.2 File length 300-line cap | Not in ESLint config     | Add `max-lines` rule               |
+| §2.4 Pre-commit hooks         | Not configured (CI-only) | Add `lefthook.yml`                 |
+| §2.3 E2E > unit               | Only unit tests exist    | Add guidance + E2E example pattern |
 
 ---
 
@@ -98,7 +98,7 @@ This auto-installs the git hook when contributors run `npm ci` or `npm install`.
 
 Add a new section after "Commands":
 
-```markdown
+````markdown
 ## Pre-commit hooks
 
 Lefthook runs automatically on `git commit`. It executes typecheck → lint →
@@ -109,13 +109,15 @@ To install manually (already runs on `npm ci`):
 ```bash
 npx lefthook install
 ```
+````
 
 To skip once (discouraged — CI will still catch it):
 
 ```bash
 git commit --no-verify  # rejected in code review
 ```
-```
+
+````
 
 ### 5. E2E test pattern (guidance only — no new test files required)
 
@@ -125,18 +127,18 @@ Add a note in `AGENTS.md` under "Conventions":
 - Prefer integration/E2E tests that exercise the public API end-to-end.
   Unit-test only pure functions with non-trivial branching. Do not mock
   internal collaborators to hit coverage targets.
-```
+````
 
 ---
 
 ## Files changed
 
-| File | Change |
-|------|--------|
-| `eslint.config.mjs` | Add `max-lines: [error, 300]` to both rule blocks |
-| `lefthook.yml` | Create — pre-commit gates for typecheck/lint/format/test |
-| `package.json` | Add `lefthook` devDep + `prepare` script |
-| `AGENTS.md` | Add pre-commit section + E2E test guidance |
+| File                | Change                                                   |
+| ------------------- | -------------------------------------------------------- |
+| `eslint.config.mjs` | Add `max-lines: [error, 300]` to both rule blocks        |
+| `lefthook.yml`      | Create — pre-commit gates for typecheck/lint/format/test |
+| `package.json`      | Add `lefthook` devDep + `prepare` script                 |
+| `AGENTS.md`         | Add pre-commit section + E2E test guidance               |
 
 ---
 
