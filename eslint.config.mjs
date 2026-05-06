@@ -20,6 +20,7 @@ export default tseslint.config(
       },
     },
     rules: {
+      "max-lines": ["error", { max: 300 }],
       // Prefer explicit return types on exported functions
       "@typescript-eslint/explicit-module-boundary-types": "warn",
       // Allow void returns in callbacks
@@ -37,6 +38,7 @@ export default tseslint.config(
     files: ["tests/**/*.ts"],
     extends: [...tseslint.configs.recommended],
     rules: {
+      "max-lines": ["error", { max: 300 }],
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-unsafe-assignment": "off",
       "@typescript-eslint/no-unsafe-member-access": "off",
