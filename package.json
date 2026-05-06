@@ -1,6 +1,6 @@
 {
   "name": "ts-npm-starter",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Production-ready TypeScript npm package starter template",
   "type": "module",
   "sideEffects": false,
