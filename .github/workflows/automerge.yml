@@ -7,6 +7,9 @@ on:
     types: [completed]
   status: {}
 
+permissions:
+  contents: read
+
 jobs:
   automerge:
     name: Automerge bot PRs
@@ -16,7 +19,7 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: oleg-koval/pr-automerge-github-action@main
+      - uses: oleg-koval/pr-automerge-github-action@172b14bf189d9809d03b7ff8eed7c527095adbcc # main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           bot-logins: |
